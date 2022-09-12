@@ -1,0 +1,11 @@
+# TypeProf 0.21.2
+
+# Classes
+class Object
+  private
+  def convert_hash_syntax: (String old_syntax) -> String
+end
+
+class ConvertHashSyntaxTest
+  def test_convert_hash_syntax: -> untyped
+end

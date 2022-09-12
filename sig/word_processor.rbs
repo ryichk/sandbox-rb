@@ -1,0 +1,22 @@
+# TypeProf 0.21.2
+
+# Classes
+class WordProcessor
+  @effects: Array[^(String) -> String]
+
+  def initialize: -> void
+  def add_effect: (^(String) -> String effect) -> Array[^(String) -> String]
+  def exec: (String original_words) -> String
+end
+
+module Effector
+  def self.reverse: -> ^(String) -> String
+  def self.echo: (Integer rate) -> ^(String) -> String
+  def self.upper: (Integer level) -> ^(String) -> String
+end
+
+class WordProcessorTest
+  def test_exec_without_effects: -> untyped
+  def test_exec_with_reverse: -> untyped
+  def test_exec_with_all_effects: -> untyped
+end

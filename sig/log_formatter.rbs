@@ -1,0 +1,10 @@
+# TypeProf 0.21.2
+
+# Classes
+module LogFormatter
+  def self.format_log: -> untyped
+end
+
+class LogFormatterTest
+  def test_format_log: -> untyped
+end

@@ -1,0 +1,12 @@
+# TypeProf 0.21.2
+
+# Classes
+class Object
+  private
+  def regexp_checker: -> nil
+end
+
+class RegexpCheckerTest
+  def test_matched: -> untyped
+  def test_unmatch: -> untyped
+end

@@ -1,0 +1,11 @@
+# TypeProf 0.21.2
+
+# Classes
+class Object
+  private
+  def fizzbuzz: (Integer n) -> String
+end
+
+class FizzBuzzTest
+  def test_fizzbuzz: -> untyped
+end

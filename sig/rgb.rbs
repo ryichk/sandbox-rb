@@ -1,0 +1,13 @@
+# TypeProf 0.21.2
+
+# Classes
+class Object
+  private
+  def to_hex: (Integer r, Integer g, Integer b) -> untyped
+  def to_ints: (String hex) -> Array[Integer]
+end
+
+class RgbTest
+  def test_to_hex: -> untyped
+  def test_to_ints: -> untyped
+end

@@ -1,0 +1,14 @@
+# TypeProf 0.21.2
+
+# Classes
+module Effector
+  def self.reverse: -> ^(String) -> String
+  def self.echo: (Integer rate) -> ^(String) -> String
+  def self.upper: (Integer level) -> ^(String) -> String
+end
+
+class EffectorTest
+  def test_reverse: -> untyped
+  def test_echo: -> untyped
+  def test_upper: -> untyped
+end
