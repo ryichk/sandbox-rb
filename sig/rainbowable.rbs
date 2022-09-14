@@ -1,14 +1,5 @@
 # TypeProf 0.21.2
 
-# Classes
-class Array
-  include Rainbowable
-end
-
-class String
-  include Rainbowable
-end
-
 module Rainbowable
   def rainbow: -> String
 end

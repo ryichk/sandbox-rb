@@ -8,4 +8,5 @@ end
 
 class FizzBuzzTest
   def test_fizzbuzz: -> untyped
+  def assert_equal: (untyped, untyped) -> void
 end

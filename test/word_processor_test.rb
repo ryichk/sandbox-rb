@@ -8,17 +8,17 @@ class WordProcessorTest < Minitest::Test
     assert_equal 'Hello World!', processor.exec('Hello World!')
   end
 
-  def test_exec_with_reverse
+  def test_exec_with_revers
     processor = WordProcessor.new
-    processor.add_effect(Effector.reverse)
+    processor.add_effect(Effector.revers)
     assert_equal 'olleH !dlroW', processor.exec('Hello World!')
   end
 
   def test_exec_with_all_effects
     processor = WordProcessor.new
-    processor.add_effect(Effector.echo(4))
-    processor.add_effect(Effector.upper(5))
-    processor.add_effect(Effector.reverse)
+    processor.add_effect(Effector.echoo(4))
+    processor.add_effect(Effector.uppercase(5))
+    processor.add_effect(Effector.revers)
     assert_equal '!!!!!OOOOLLLLLLLLEEEEHHHH !!!!!!!!!DDDDLLLLRRRROOOOWWWW',
       processor.exec('Hello World!')
   end

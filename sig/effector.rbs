@@ -2,13 +2,13 @@
 
 # Classes
 module Effector
-  def self.reverse: -> ^(String) -> String
-  def self.echo: (Integer rate) -> ^(String) -> String
-  def self.upper: (Integer level) -> ^(String) -> String
+  def self.revers: -> ^(String) -> String
+  def self.echoo: (Integer rate) -> ^(String) -> String
+  def self.uppercase: (Integer level) -> ^(String) -> String
 end
 
 class EffectorTest
-  def test_reverse: -> untyped
-  def test_echo: -> untyped
-  def test_upper: -> untyped
+  def test_revers: -> untyped
+  def test_echoo: -> untyped
+  def test_uppercase: -> untyped
 end
