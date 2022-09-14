@@ -1,0 +1,13 @@
+# TypeProf 0.21.2
+
+# Classes
+class Object
+  UNITS: {m: Float, ft: Float, in: Float}
+
+  private
+  def convert_length: (Integer length, ?from: :ft | :in | :m, ?to: :in | :m) -> (Float | Integer)
+end
+
+class ConvertLengthTest
+  def test_convert_length: -> untyped
+end

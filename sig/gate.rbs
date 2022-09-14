@@ -1,0 +1,32 @@
+# TypeProf 0.21.2
+
+# Classes
+class Gate
+  STATIONS: [:ichinoe, :hunabori, :higashiojima]
+  FARES: [Integer, Integer]
+  @station: :higashiojima | :hunabori | :ichinoe
+
+  def initialize: (:higashiojima | :hunabori | :ichinoe station) -> void
+  def enter: (Ticket ticket) -> (:higashiojima | :hunabori | :ichinoe)
+  def exit: (Ticket ticket) -> bool
+  def calcurate_fare: (Ticket ticket) -> Integer
+end
+
+class Ticket
+  attr_reader fare: Integer
+  attr_reader stamped_at: :higashiojima | :hunabori | :ichinoe
+  def initialize: (Integer fare) -> void
+  def stamp: (:higashiojima | :hunabori | :ichinoe station) -> (:higashiojima | :hunabori | :ichinoe)
+end
+
+class GateTest
+  @ichinoe: Gate
+  @hunabori: Gate
+  @higashiojima: Gate
+
+  def setup: -> Gate
+  def test_ichinoe_to_hunabori: -> untyped
+  def test_ichinoe_to_higashiojima_when_fare_is_not_enough: -> untyped
+  def test_ichinoe_to_higashiojima_when_fare_is_enough: -> untyped
+  def test_hunabori_to_higashiojima: -> untyped
+end

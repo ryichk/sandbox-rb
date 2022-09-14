@@ -1,12 +1,12 @@
 module Effector
   class << self
-    def reverse
+    def revers
       ->(words) {
         words.split(' ').map(&:reverse).join(' ')
       }
     end
 
-    def echo(rate)
+    def echoo(rate)
       ->(words) {
         words.each_char.map do |w|
           w == ' ' ? w : w * rate
@@ -14,7 +14,7 @@ module Effector
       }
     end
 
-    def upper(level)
+    def uppercase(level)
       ->(words) {
         words.split(' ').map do |word|
           "#{word.upcase}#{'!' * level}"

@@ -1,0 +1,10 @@
+# TypeProf 0.21.2
+
+module Rainbowable
+  def rainbow: -> String
+end
+
+class RainbowableTest
+  def setup: -> singleton(Array)
+  def test_rainbow: -> untyped
+end
